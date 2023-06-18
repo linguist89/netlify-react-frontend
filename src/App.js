@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import ContentInput from './ContentInput';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ContentInput 
+      instructions="What type of entrepreneur?" 
+      placeholder="What type of entrepreneur?"
+      ></ContentInput>
+      <ContentInput 
+      instructions="What is your focus?" 
+      placeholder="What is your focus?"
+      ></ContentInput>
+      <ContentInput 
+      instructions="What are the trends of your region?" 
+      placeholder="What are the trends of your region?"
+      ></ContentInput>
+      <ContentInput 
+      instructions="Enter your CV" 
+      placeholder="Enter your CV" 
+      ></ContentInput>
     </div>
   );
 }
